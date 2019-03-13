@@ -16,14 +16,6 @@ $(function(){
 		rules:
 		{	
 		    password: "required",
-			weight: {
-			    required:true,
-			    number:true
-			},
-			height:  {
-			    required:true,
-			    number:true
-			},
 			email: {
 				required: true,
 				email: true
@@ -41,14 +33,6 @@ $(function(){
 				email: {
 					required: ' Please enter email',
 					email: ' Please enter valid email'
-				},
-				weight: {
-					required: " Please enter your weight",
-					number: " Only numbers allowed"
-				},
-				height: {
-					required: " Please enter your height",
-					number: " Only numbers allowed"
 				},
 			}
 			
