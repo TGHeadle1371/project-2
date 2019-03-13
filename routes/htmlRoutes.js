@@ -11,9 +11,9 @@ module.exports = function (app) {
     });
   });
   // Load signup page
-  app.get("/signup", function (req, res) {
+  app.get("/login", function (req, res) {
     db.Example.findAll({}).then(function (dbExamples) {
-      res.render("signup", {
+      res.render("login", {
         msg: "Welcome!",
         examples: dbExamples
       });
