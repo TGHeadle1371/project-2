@@ -19,7 +19,7 @@ module.exports = function(app) {
       });
     });
   });
-  // Load signup page
+  // Load Home page
   app.get("/landing", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("landing", {
@@ -28,10 +28,19 @@ module.exports = function(app) {
       });
     });
   });
-
+  // User Profiles
   app.get("/userprofile", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("userProfile", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
+  // Load About page
+  app.get("/about", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.render("about", {
         msg: "Welcome!",
         examples: dbExamples
       });
