@@ -23,7 +23,7 @@ module.exports = function(app) {
   app.get("/landing", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("landing", {
-        msg: "Welcome " + req.user.name + "!",
+        msg: "Welcome!",
         examples: dbExamples
       });
     });
