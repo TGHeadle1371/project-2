@@ -12,7 +12,7 @@
             <div class="login-page">
                 <div class="form">
 
-                    <form class="login-form" name="logs" action="User" onsubmit="return validateLogin()" method="post">
+                    <form class="login-form" action="/User/update?_method=GET" method="POST">
                         <p class="message">
                             <h4 class="mb-0">Email</h4> <br> <input class="text-center" type="text"
                                 placeholder="Type here" name="email" id="email" required>
@@ -20,8 +20,8 @@
                         <input type="hidden" name="action" value="login">
                         </br>
                         <p class="message">
-                            <h4 class="mb-0">Password </h4> <br> <input class="text-center" type="password"
-                                placeholder="Type here" name="pwd" id="pwd" required>
+                            <h4 class="mb-0">Password </h4> <br> <input class="text-center" type="text"
+                                placeholder="Type here" name="password" id="password" required>
                         </p> </br>
                         <button class="loginBtn mb-3" style="width: 25%">login</button>
                         <p class="message">Forgot Password? <a href="/forgot">Reset Password</a></p> <br>
