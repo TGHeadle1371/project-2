@@ -1,32 +1,27 @@
 {
-  "name": "project-2",
+  "name": "expresslogin",
   "version": "1.0.0",
-  "description": "Project 2 Starter",
+  "description": "Node Express Handlebars login with bcrypt",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "lint": "eslint **/*.js --quiet",
-    "fix": "eslint --fix .",
-    "test": "npm run lint && cross-env NODE_ENV=test mocha -u tdd --reporter spec --exit"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "keywords": [
+    "handlebars"
+  ],
+  "author": "Thomas Headle",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.4",
-    "dotenv": "^6.0.0",
-    "express": "^4.16.3",
-    "express-handlebars": "^3.0.0",
-    "mysql2": "^1.6.4",
-    "react": "^16.8.4",
-    "sequelize": "^4.43.0"
-  },
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "chai-http": "^4.0.0",
-    "cross-env": "^5.2.0",
-    "eslint": "^4.19.1",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "mocha": "^5.2.0",
-    "prettier": "^1.13.7"
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.5",
+    "path": "^0.12.7",
+    "sequelize": "^5.1.0"
   }
 }
